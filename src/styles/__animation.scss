@@ -24,3 +24,26 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5; 
+  }
+}
+
+.fade-in {
+  opacity: 0; 
+  animation: fadeIn .3s ease-in forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}

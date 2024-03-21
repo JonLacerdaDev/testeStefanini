@@ -71,11 +71,11 @@ const CharacterList = () => {
     return true;
   });
 
-  if (loading) return <p>Carregando...</p>;
+  if (loading) return <div className='loading'><p>Carregando</p></div>;
   if (error) return <p>Erro: {error}</p>;
 
   return (
-    <>
+    <div className='fade-in'>
       <div className='filters'>
         <CharacterFilter
           label="Casa"
@@ -102,7 +102,7 @@ const CharacterList = () => {
         />
       ))}
       </div>
-    </>
+    </div>
   );
 }
 
