@@ -2,11 +2,33 @@
 	display: flex;
 	margin: 25px 0;
 	justify-content: center;
+	flex-direction: column;
+	width: 100%;  
+
+	@media (max-width: $mobile-breakpoint) {
+		div {
+			margin: 5px 0;
+			width: 30%;
+		}
+	}
+
+	@media (min-width: 480px) {    
+		flex-direction: row;
+	}
 
 	label {
 		font-size: 18px;
 		margin: 0 15px;
 		font-weight: bold;
+
+		@media (max-width: $mobile-breakpoint) {
+			width: 50%;
+			display: inline-block;
+
+			div {
+				margin: 5px 0;
+			}
+		}
 	}
 
 	select {
@@ -24,7 +46,11 @@
 		background-repeat: no-repeat;
 		background-position: right 10px center;
 		background-size: 15px;
-		min-width: 150px;
+		min-width: 170px;
+
+		@media (min-width: $mobile-breakpoint) {
+			min-width: 150px;
+		}
 	}
 
 	option {

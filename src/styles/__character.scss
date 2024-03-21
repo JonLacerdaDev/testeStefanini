@@ -54,23 +54,27 @@
 	&__image {
 		max-height: 350px;
 		height: 290px;
-		border: 1px solid $border-color;
+		width: 100%;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
 
 		@media (min-width: $mobile-breakpoint) {
 			width: 80%;
 			object-fit: cover;
 			background-position: center;
 			background-size: contain;
+			border: 1px solid $border-color;
 		}
 	}
 
 	&__info {
 		padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
 
 		h2 {
 			margin: 0;
@@ -80,6 +84,7 @@
 		p {
 			margin: 5px 0;
 			font-size: 16px;
+			text-transform: capitalize;
 		}
 	}
 
