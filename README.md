@@ -18,7 +18,7 @@ Este projeto é uma landing page temática do Harry Potter, desenvolvida como pa
 
 ## Demonstração
 
-Confira a aplicação ao vivo hospedada na Vercel: [Harry Potter Landing Page](https://teste-stefanini-b85t9mf8v.vercel.app/)
+Confira a aplicação ao vivo hospedada na Vercel: [Harry Potter Landing Page](https://teste-stefanini.vercel.app/)
 
 ## Instalação e Execução
 
