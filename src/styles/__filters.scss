@@ -19,6 +19,7 @@
 		font-size: 18px;
 		margin: 0 15px;
 		font-weight: bold;
+		white-space: nowrap;
 
 		@media (max-width: $mobile-breakpoint) {
 			width: 50%;
