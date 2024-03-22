@@ -1,7 +1,7 @@
 import CharacterFilterProps  from '../../interfaces/CharacterFilter'
 
-const CharacterFilter: React.FC<CharacterFilterProps> = ({ label, options, onSelect }) => {
-
+const CharacterFilter = ({ label, options, onSelect }:CharacterFilterProps) => {
+	
 	const mapOptionToLabel = (label: string, option: string): string => {
 		if (label === "Vida") {
 			switch (option) {

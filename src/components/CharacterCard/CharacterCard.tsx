@@ -1,8 +1,7 @@
-import React from 'react';
 import { CharacterCardProps } from '../../interfaces/CharacterCard'
 import ImagePlaceholder from '../../assets/image-placeholder.webp';
 
-const CharacterCard: React.FC<CharacterCardProps> = ({ character , className}) => {
+const CharacterCard = ({ character , className}:CharacterCardProps) => {
   return (
     <div className={`character__card ${className}`}>
       <div className="character__details">

@@ -5,7 +5,7 @@ body {
 	color: $text-color;
 	font-family: 'Alike';
 	background: linear-gradient(51deg,$background-color,darken($background-color, 20%), lighten($background-color, 5%));
-  background-size: 180% 180%;
-  animation: gradient-animation 4s ease infinite;
+  background-size: 10000%;
+  animation: gradient-animation 25s ease infinite;
 }
 

@@ -16,8 +16,12 @@
 		background-image: url($border-card-top), url($border-cart-bottom);
 
 		@media (min-width: $mobile-breakpoint) {
-			width: 20vw;      
+			width: 27vw;      
 			height: 400px;
+		}
+
+		@media (min-width: $desktop-breakpoint) {
+			width: 20vw; 
 		}
 	}
 
@@ -54,7 +58,6 @@
 	&__image {
 		max-height: 350px;
 		height: 290px;
-		width: 100%;
     background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;

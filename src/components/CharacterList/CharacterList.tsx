@@ -41,7 +41,6 @@ const CharacterList = () => {
   }, []);
 
 	const handleFilterChange = (filterType: string, value: string | boolean | null) => {
-		setApplyAnimation(false);
 		switch (filterType) {
 			case 'house':
 				setHouseFilter(value === 'Todas' ? null : value);
@@ -56,6 +55,9 @@ const CharacterList = () => {
 				break;
 		}
 		setApplyAnimation(true);
+    setTimeout(() => {
+      setApplyAnimation(false);
+    }, 500);
 	};
 
   const filteredCharacters = characters.filter(character => {
